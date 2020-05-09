@@ -17,7 +17,6 @@ def create_wlan(ssid: str, expire: int, forward_url: str, sponsor_email_domains:
     :return dict: A dictionary containing the JSON response from the Mist API.
     """
     url = f"https://api.mist.com/api/v1/sites/{site_id}/wlans"
-    log.info(f"Creating new sponsored guest wireless network '{ssid}'...")
     headers = {
         "Content-type": "application/json",
         "Authorization": f"Token {token}"

@@ -17,13 +17,12 @@ optional arguments:
 
 Example:
 ```bash
-$ cwcreator.py --token <API TOKEN> --site_id <MIST SITE ID> --ssid "NEW SSID" --psk "NEW PSK FOR WLAN" --vlan 100 --duration 3
+$ cwcreator.py --token <API TOKEN> --site_id <MIST SITE ID> --ssid "GUEST_TEST" --url <FORWARDING URL> --emails <SPONSOR EMAIL DOMAIN> --emails <SPONSOR EMAIL DOMAIN> --expire 172800
 
-2020-05-07 15:17:26 PDT [INFO   ][cwcreator]: Creating new wireless network 'NEW SSID' with the PSK 'NEW PSK FOR WLAN'.
-2020-05-07 15:17:27 PDT [INFO   ][cwcreator]: New wireless network 'NEW SSID' created!
-2020-05-07 15:17:27 PDT [INFO   ][cwcreator]: Created WLAN at 2020-05-07 15:17
-2020-05-07 15:17:27 PDT [INFO   ][cwcreator]: WLAN to be destroyed at approx 2020-05-10 15:17
-2020-05-07 15:17:27 PDT [INFO   ][cwcreator]: WLAN ID: 56ce01b6-fe4c-4186-97f2-1111d23c521c
+2020-05-08 17:11:57 PDT [INFO   ][gwcreator]: Creating new sponsored guest wireless network 'GUEST_TEST'...
+2020-05-08 17:11:58 PDT [INFO   ][gwcreator]: New sponsored guest wireless network 'GUEST_TEST' created!
+2020-05-08 17:11:58 PDT [INFO   ][gwcreator]: Successfully Created new guest wireless network...
+2020-05-08 17:11:58 PDT [INFO   ][gwcreator]: New WLAN ID: 020feb56-9a58-4e17-8732-5bace02474e7
 ```
 
 Using the response from in the logs a secondary task to delete the newly created WLAN can easily be implemented.
